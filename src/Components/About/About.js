@@ -5,7 +5,7 @@ import './About.css'
 function About(){
     const [information, setInformation] = useState({});
     useEffect(() => {
-        axios.get('https://backend-portafolio-gabriel.herokuapp.com/about')
+        axios.get('http://localhost:4000/api/v1/about')
         .then(
             res => setInformation(res.data[0])
         )}, [setInformation])

@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import About from './Component/About/About';
-import Portfolio from './Component/Portafolio/Portafolio'
+import About from './Components/About/About';
+import Portfolio from './Components/Portafolio/Portafolio'
 
 function App() {
-  return (
+  return (  
     <div className="App">
       <About/>
-      <Portfolio/>
-    </div>
+      <Portfolio/> 
+    </div>   
   );
 }
 

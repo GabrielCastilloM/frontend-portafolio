@@ -1,8 +1,8 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import './Portafolio.css'
+import './PortafolioMe.css'
 
-function Portfolio(){
+function PortafolioMe(){
     const [projects, setProjects] = useState({});
     useEffect(() => {
         axios.get('http://localhost:4000/api/v1/proyectos')
@@ -24,4 +24,4 @@ function Portfolio(){
 </>)
 };
 
-export default Portfolio;
+export default PortafolioMe;

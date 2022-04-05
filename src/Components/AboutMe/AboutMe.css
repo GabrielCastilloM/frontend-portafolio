@@ -1,19 +1,20 @@
 .About-card{
-    background-color: seashell;
+    /*background-color: rgb(204, 117, 55);*/
     display: flex;
     margin: 10px auto;
-    width: 80%;
+    width: 850px;
     padding: 2rem;
-    border-radius: 3%;
+    border-radius: 30px;
     box-shadow: 10px 5px 5px black;
 }
 
 .div-foto{
-    display: inline;
+    display: inline;    
 }
 
 .foto-perfil{
     width: 40%;
+    border-radius: 30px;
 }
 
 .Descripcion{  

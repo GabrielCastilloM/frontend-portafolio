@@ -1,15 +1,16 @@
 import React,{useState,useEffect} from 'react';
 import axios from 'axios';
-import './About.css'
+import './AboutMe.css'
 
-function About(){
+function AboutMe(){
     const [information, setInformation] = useState({});
     useEffect(() => {
         axios.get('http://localhost:4000/api/v1/about')
         .then(
             res => setInformation(res.data[0])
         )}, [setInformation])
-    return(<div className="About-card">
+    return(
+    <div className="About-card">
     <div className="div-foto">
         <img className="foto-perfil" alt="FotoPerfil" src={information.photo}></img>
     </div>
@@ -23,7 +24,8 @@ function About(){
             )}
         </ul>
     </div>
-</div>)
+    </div>
+    )
 };
 
-export default About;
+export default AboutMe;

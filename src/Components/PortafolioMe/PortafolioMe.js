@@ -11,16 +11,19 @@ function PortafolioMe(){
         )}, [setProjects])
 
     return(<>
-        <div className="mega-card-portfolio">
+    
+        <div className="mega-card-portfolio">            
             { projects.length > 0 && projects.map((project, index) => 
                 <div className="individual-card">
-                    <h1>{project.name}</h1>
+                    <h1>{project.name}</h1>                    
                     <img className="imagen-proyecto" alt="imagen-proyecto" src={project.image}></img>
                     <p>{project.description}</p>
                     <a className="boton-visitar" target="_blank" href={project.link}> Visitar Proyecto </a>                   
                 </div>
-            )}
+            )}            
+      
         </div>
+        
 </>)
 };
 

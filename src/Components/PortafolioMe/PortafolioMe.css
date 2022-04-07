@@ -1,25 +1,47 @@
+
 .mega-card-portfolio{
-    display: inline-block;
-    flex-wrap: wrap;
-    width: 30%;
-    
+
+  max-width: 1100px;
+  display: flex;
+  gap: 3%;
+  flex-wrap: wrap; 
+  justify-content: center;
+  
 }
 
-.individual-card{
-    background-color: seashell;
-    margin: 2rem auto;
-    box-shadow: 10px 5px 5px black;
+.individual-card{ 
+    background-color: rgb(74, 75, 77);    
+    max-width: 230px;
+    max-height: 280px;
+    margin: 1%;   
+    text-align: center;
+    line-height: 15px;
+    font-size: 15px;
+    display: block;
+    
+    box-shadow: 10px 5px 5px rgb(161, 158, 158);
     border-radius: 3%;
-    padding: 1%;
+    padding: 1%;   
+}
+
+.individual-card > h1{
+    margin: 1px;    
+    height: 20px;   
+    padding: 1px;   
 }
 
 .imagen-proyecto{
-    width: 20%;
+    display: block;
+    margin: 0 auto;
+    max-width: 30%;
+    border-radius: 40%;
+       
 }
 
-.boton-visitar{
+.boton-visitar{ 
     background-color: rgb(121, 216, 112);
     text-decoration: none;
-    padding: 0.8rem;
+    padding: 0.4rem;
     border-radius: 3%;
+ 
 }

@@ -13,8 +13,8 @@ function App() {
         <Router>
           <nav className='App-nav' >
             <ul id='menu'>
-              <li><a title="Home"> <Link to="/">Home</Link></a></li>            
-              <li><a title="About"><Link to="/about">About</Link></a></li>
+              <li><a title="Inicio"> <Link to="/">Inicio</Link></a></li>            
+              <li><a title="Sobre Mi"><Link to="/about">Sobre Mi</Link></a></li>
               <li><a title="Portafolio"><Link to="Portafolio">Portafolio</Link></a></li>                  
             </ul>
           </nav>
@@ -36,8 +36,3 @@ function App() {
 }
 
 export default App;
-
-
-
-// {/* <About/>
-// <Portfolio/>  */}

@@ -1,29 +1,25 @@
-.About-card{
-    /*background-color: rgb(204, 117, 55);*/
-    display: flex;
-    margin: 10px auto;
-    width: 850px;
-    padding: 2rem;
-    border-radius: 30px;
-    box-shadow: 10px 5px 5px black;
+.container-aboutMe{ 
+    max-width: 1000px;       
 }
 
-.div-foto{
-    display: inline;    
+.nombre {
+
+text-align: center;
 }
 
-.foto-perfil{
-    width: 40%;
-    border-radius: 30px;
+.descripcion{ 
+    
+   
+   
 }
-
-.Descripcion{  
-    justify-content: center;
+.descripcion-texto {
+    text-align: justify;
 }
 
 .skills{
     display: flex;
     flex-wrap: wrap;
+    
 }
 
 .skill{

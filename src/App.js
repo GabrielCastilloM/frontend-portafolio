@@ -15,18 +15,25 @@ function App() {
             <ul id='menu'>
               <li><a title="Inicio"> <Link to="/">Inicio</Link></a></li>            
               <li><a title="Sobre Mi"><Link to="/about">Sobre Mi</Link></a></li>
-              <li><a title="Portafolio"><Link to="Portafolio">Portafolio</Link></a></li>                  
-            </ul>
-          </nav>
+              <li><a title="Portafolio"><Link to="Portafolio">Portafolio</Link></a></li>
+              <footer class="text-center ">
+                <p>
+                    Copyright &copy; 2022 Hecho por  Gabriel Castillo
+                </p>
+              </footer>                  
+            </ul> 
+                    
+          </nav>          
 
           <section className="App-section">          
             <Routes>
               <Route path='/' element={<Home />}/>           
               <Route path='/about' element={<About/>}/>            
               <Route path='/portafolio' element={<Portafolio />}/>             
-            </Routes> 
-              
+            </Routes>              
           </section>
+
+         
         
         </Router> 
       </div>    

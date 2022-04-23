@@ -26,12 +26,14 @@
 .App-nav {
   background-color: rgb(74, 75, 77);
   color: white;
+  float: left;
   margin: 10px; 
   width: 200px;
-  min-width: 100px;
+  min-width: 70px;
   display: flex; 
+  flex-direction: column;
+  justify-content:space-between;
   align-items: center; 
-  justify-content: center;
   text-align: center;
 }
 
@@ -57,11 +59,14 @@ ul#menu li a:hover::before {
   opacity: 0;
 }
 
-footer {
-  margin-top: 100px;
+footer {  
   font-size: 15px;
-  text-align: left;
+  margin-bottom: 10px;
 }
+footer p{  
+ margin: 0;
+}
+
 
 .App-section { 
   color: white;

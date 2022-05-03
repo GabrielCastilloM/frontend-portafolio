@@ -1,11 +1,12 @@
 import '../Components/Home/Home.css';
+import fotoPerfil from '../assets/img/IMG_perfil.jpg'
 
 export default function Home() {
     return (
         <div className="container">      
             
             <div className="div-foto">
-                <img style={{width: "200px"}} className="foto-perfil" alt="FotoPerfil" src={'https://i.ibb.co/KLZv0Ht/IMG-20210101-001430.jpg'}></img>
+                <img style={{width: "300px"}} className="foto-perfil" alt="FotoPerfil" src={fotoPerfil}></img>
             </div>   
             
             <div className="div-parrafos">

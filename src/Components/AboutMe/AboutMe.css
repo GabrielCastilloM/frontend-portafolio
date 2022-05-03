@@ -1,28 +1,49 @@
-.container-aboutMe{ 
+.container-aboutMe { 
     max-width: 1000px;       
 }
 
 .nombre {
-
 text-align: center;
 }
 
-.descripcion{ 
-    
-   
-   
-}
-.descripcion-texto {
-    text-align: justify;
-}
-
-.skills{
+.descripcion { 
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: center;
+    justify-content: space-evenly;    
 }
 
-.skill{
+.descripcion-texto {
+    text-align: justify;
+    font-size: 20px;
+    width: 50%;   
+}
+.container-foto {  
+
+}
+
+.foto-about {
+  width: 400px;
+  border-radius: 30px;  
+  min-width: 80%; 
+  min-height: 80%;
+  box-shadow: 10px 5px 5px black;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 30px;  
+}
+
+.habilidades {
+    margin-left: 44px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.skill {
     background-color: rgb(121, 216, 112);
     margin: 0.3rem;
     padding: 0.8rem;

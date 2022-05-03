@@ -6,6 +6,7 @@ function PortafolioMe(){
     const [projects, setProjects] = useState({});
     useEffect(() => {
         axios.get('https://backend-portafolio-gabriel.herokuapp.com/api/v1/proyectos')
+        // axios.get('http://localhost:4000/api/v1/proyectos')
         .then(
             res => setProjects(res.data)
         )}, [setProjects])

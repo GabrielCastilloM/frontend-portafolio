@@ -3,8 +3,7 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center; 
-  width:100%;
-  
+  width:100%;  
 }
 
 .container > div {  
@@ -14,19 +13,17 @@
   height: auto; 
 }
 
-.foto-perfil{   
+.foto-perfil {   
   border-radius: 30px;  
-  min-width: 20%; 
-  min-height: 20%;
+  min-width: 80%; 
+  min-height: 80%;
   box-shadow: 10px 5px 5px black;
   display: block;
   margin: 0 auto;
-  max-width: 100%;
-  
-  
+  max-width: 100%;  
 }
 
-.div-parrafos > p{
+.div-parrafos > p {
   font-size: 20px;
   max-width: 550px;
   margin: 0%;

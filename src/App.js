@@ -14,10 +14,16 @@ function App() {
           <nav className='App-nav' >
             <MostrarRedes/> 
             <ul id='menu'>
-              <li><a title="Inicio"> <Link to="/">Inicio</Link></a></li>            
-              <li><a title="Sobre Mi"><Link to="/about">Sobre Mi</Link></a></li>
-              <li><a title="Portafolio"><Link to="Portafolio">Portafolio</Link></a></li>
-            </ul> 
+              <li>
+                <Link to="/" title="Inicio">Inicio</Link>
+              </li>            
+              <li>
+                <Link to="/about" title="Sobre Mi">Sobre Mi</Link>
+              </li>
+              <li>
+                <Link to="/portafolio" title="Portafolio">Portafolio</Link>
+              </li>
+            </ul>
             <footer >
                 <p>Copyright &copy; 2022 </p>
                 <p> Hecho por  Gabriel Castillo</p>

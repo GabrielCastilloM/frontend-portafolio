@@ -5,8 +5,8 @@ import fotoDescripcion from '../../assets/img/IMG_about.jpg'
 
 function AboutMe(){
     const [information, setInformation] = useState({});
-    useEffect(() => {
-        axios.get('https://backend-portafolio-production-1a75.up.railway.app/api/v1/about')
+    useEffect(() => {        
+        axios.get('https://backend-portafolio-production-6ebb.up.railway.app/api/v1/about')
         .then(
             res => setInformation(res.data[0])
         )}, [setInformation])

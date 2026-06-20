@@ -19,7 +19,7 @@ function PortafolioMe(){
                     <h3>{project.name}</h3>                    
                     <img className="imagen-proyecto" alt="imagen-proyecto" src={project.image}></img>
                     <p>{project.description}</p>
-                    <a className="boton-visitar" target="_blank" href={project.link}> Visitar Proyecto </a>                   
+                    <a className="boton-visitar" target="_blank" rel="noreferrer" href={project.link}> Visitar Proyecto </a>                   
                 </div>
             )}            
       

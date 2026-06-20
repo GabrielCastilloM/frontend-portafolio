@@ -9,9 +9,9 @@ function MostrarRedes(){
     return(
         <div className='redes-container'>
           <ul>
-            <li><a href='https://github.com/GabrielCastilloM' target="_blank" className='githab'><FontAwesomeIcon icon={faGithub} /></a></li>
-            <li><a href='https://platzi.com/p/jgabrielcastillo/' target="_blank"  className='platzi'><SiPlatzi /> </a></li>
-            <li><a href='https://www.linkedin.com/in/jose-gabriel-castillo-mosquera-6b162250/' target="_blank" className='Linkedin'><SiLinkedin /></a></li>
+            <li><a href='https://github.com/GabrielCastilloM' target="_blank" rel="noreferrer" className='githab'><FontAwesomeIcon icon={faGithub} /></a></li>
+            <li><a href='https://platzi.com/p/jgabrielcastillo/' target="_blank" rel="noreferrer" className='platzi'><SiPlatzi /> </a></li>
+            <li><a href='https://www.linkedin.com/in/jose-gabriel-castillo-mosquera-6b162250/' target="_blank" rel="noreferrer" className='Linkedin'><SiLinkedin /></a></li>
           </ul>
        
         </div>

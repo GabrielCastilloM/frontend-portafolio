@@ -1,31 +1,40 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './PortafolioMe.css'
 
-function PortafolioMe(){
-    const [projects, setProjects] = useState({});
-    useEffect(() => {       
-        axios.get('https://backend-portafolio-production-6ebb.up.railway.app/api/v1/proyectos')
-        // axios.get('http://localhost:4000/api/v1/proyectos')
-        .then(
-            res => setProjects(res.data)
-        )}, [setProjects])
+function PortafolioMe() {
+    const [projects, setProjects] = useState([]);
+    const API_URL = process.env.REACT_APP_API_URL;
 
-    return(<>
-    
-        <div className="mega-card-portfolio">            
-            { projects.length > 0 && projects.map((project, index) => 
-                <div className="individual-card">
-                    <h3>{project.name}</h3>                    
-                    <img className="imagen-proyecto" alt="imagen-proyecto" src={project.image}></img>
+    useEffect(() => {
+        axios.get(`${API_URL}/proyectos`)
+            .then(res => setProjects(res.data))
+            .catch(err => console.error('Error API:', err))
+    }, [API_URL])
+
+    return (
+        <div className="mega-card-portfolio">
+            {projects.length > 0 && projects.map((project, index) => (
+                <div className="individual-card" key={index}>
+                    <h3>{project.name}</h3>
+                    <img
+                        className="imagen-proyecto"
+                        alt="imagen-proyecto"
+                        src={project.image}
+                    />
                     <p>{project.description}</p>
-                    <a className="boton-visitar" target="_blank" rel="noreferrer" href={project.link}> Visitar Proyecto </a>                   
+                    <a
+                        className="boton-visitar"
+                        target="_blank"
+                        rel="noreferrer"
+                        href={project.link}
+                    >
+                        Visitar Proyecto
+                    </a>
                 </div>
-            )}            
-      
+            ))}
         </div>
-        
-</>)
-};
+    )
+}
 
 export default PortafolioMe;

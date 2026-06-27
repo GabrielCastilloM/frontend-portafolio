@@ -7,11 +7,11 @@ function AboutMe(){
     const [information, setInformation] = useState({});
     const API_URL = process.env.REACT_APP_API_URL;
 
-    useEffect(() => {        
+    useEffect(() => {
         axios.get(`${API_URL}/about`)
-        .then(res => setInformation(res.data[0]))
-        .catch(err => console.error(err))
-    }, [])
+            .then(res => setInformation(res.data[0]))
+            .catch(err => console.error(err))
+    }, [API_URL])
 
     return(
     <div className="container-aboutMe">
